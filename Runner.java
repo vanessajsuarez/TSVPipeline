@@ -18,7 +18,7 @@ package assignment3;
  * The user must provide the path for input and output files.
  */
 
-public class HW3Runner {
+public class Runner {
 
 	public static void main(String[] args) {
 
