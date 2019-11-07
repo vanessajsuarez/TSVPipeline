@@ -1,9 +1,13 @@
-This system records specifications made by the user into a data structure by using the TSVFilter class.
+Goal:
+This system uses the Pipes & Filters pattern to explore the stream concept by writing it from scratch. Here, the stream is a *.tsv file made up of “records”.
+By default, the system cleans the file into a new file made up of records with proper formatting.
+Proper formatting is established through the first two lines of the file which maintain information on the number of fields for each record, field types, and field names.
+Optionally, the user may specify a filter (consisting of a Field Name and Field Value) and a terminal computation.
 
-TSVPipeline then serves as an interface to establish formatting rules captured from the file and handles creating an output file that meets the user specifications.
+Methodology:
+Specifications made by the user are recorded into a data structure by using the Builder Pattern in the TSVFilter class.
+TSVPipeline then serves as an “Interfacer” by capturing formatting from the file and handles creating an output file that meets the user specifications. This is done by delegating line-by-line validation, filtering, and computation to the Processor class.
 
-This is done by delegating line-by-line validation, filtering, and computation to the Processor class.
-
-The system assumes only two field types are specified by the file and that the user specifies exactly two parameters of either type String or long. Filtering and terminal operations are optional.
-
+Use:
+The system assumes only two field types are specified by the file and that the user specifies exactly two parameters of either type String (Field Name and Field Value) or long (Field Value).
 The user must provide the path for input and output files.
