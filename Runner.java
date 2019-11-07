@@ -1,5 +1,3 @@
-package assignment3;
-
 /*
  * This system records specifications made by the user into a data
  * structure by using the TSVFilter class.
