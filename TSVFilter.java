@@ -1,6 +1,4 @@
-package assignment3;
-
-/* @author: vjs2121
+/* 
  * This Filter records specifications made by the user into a data
  * structure to be used by the pipeline using the Builder pattern.
  */
