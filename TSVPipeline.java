@@ -1,5 +1,3 @@
-package assignment3;
-
 import java.io.*;
 import java.util.Arrays;
 
