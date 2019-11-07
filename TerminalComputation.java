@@ -1,5 +1,3 @@
-package assignment3;
-
 /*
  * Possible terminal computations. 
  * This class carries out computations requested by the user by
